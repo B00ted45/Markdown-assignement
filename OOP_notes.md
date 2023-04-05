@@ -53,6 +53,25 @@ ___
 *   Why?
 Data Protection
 Restricting certain methods to be callable
+The way to encapulate somthing is by adding __ in front of it
+___
+# OVERRIDING
+ ___
+##### Overriding - two methods with the same method name and parameters (redefining)
+eg
+```python
+class Bear:
+		def sound(self):
+			print(‘roarrrr’)
+	class Dog:
+		Def sound(self):
+			print(‘bark’)
+		
+	Def makeSound(animal type):
+
+```
+
+
 
 
 
