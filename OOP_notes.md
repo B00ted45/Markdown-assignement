@@ -71,8 +71,41 @@ class Bear:
 
 ```
 
+___
+## Polymorphism
+___
+#### Polymorphism: A method that can be used across different classes and objects that is dependent on parameters
+
+__rep__() base function: 
+overrides object and is used to make it printable  
+
+###### IMPORTANT
+* Anytime there is a __str__ used there should also be __repr__
 
 
+## interable objects 
+___
+#### eg deck of cards
+
+```python
+class Deck:
+	… Code …
+	def __iter__(self):
+		return self
+
+	def __next__(self):
+		self.__index += 1
+		if self.__index == len(self.__cards):
+			self.__index = -1 # index reset
+			raise StopIteration
+		else:	
+			return self.__cards[self.__index]
+
+```
+
+##### __Inter()__  and __next()__ are used to iterate 
+
+___
 
 
 
